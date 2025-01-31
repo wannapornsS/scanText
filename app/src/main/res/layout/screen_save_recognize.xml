@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scanner feature mode: " />
+        <Spinner
+            android:id="@+id/mode_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable gallery import: " />
+        <CheckBox
+            android:id="@+id/enable_gallery_import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onEnableGalleryImportCheckboxClicked"
+            android:checked="true"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set page limit per scan: " />
+        <EditText
+            android:id="@+id/page_limit_input"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/scan_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onScanButtonClicked"
+            android:text="Scan"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/save_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSaveBitmap"
+            android:text="Save Image"
+            android:layout_margin="3dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/share_pdf_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSharePdf"
+            android:text="Share Pdf"
+            android:layout_margin="3dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/first_page_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Set page limit per scan:"
+        android:scaleType="fitCenter" />
+</LinearLayout>

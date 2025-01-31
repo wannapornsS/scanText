@@ -2,8 +2,15 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.ScanText" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/light_blue_900</item>
     </style>
 
     <style name="Theme.ScanText" parent="Base.Theme.ScanText" />
+    
+
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu." parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+
+    </style>
 </resources>

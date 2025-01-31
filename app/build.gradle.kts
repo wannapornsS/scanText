@@ -52,6 +52,7 @@ dependencies {
 //    implementation("com.google.firebase:firebase-ml-vision:24.0.3")
 //    implementation("com.google.firebase:firebase-ml-vision-image-label-model:20.0.1")
     implementation("com.google.mlkit:text-recognition:16.0.1")
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
 
     implementation(libs.androidx.camera.core)
     testImplementation(libs.junit)
